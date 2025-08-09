@@ -11,18 +11,18 @@
  */
 void print_to_98(int n)
 {
-    if (n <= 98)
-    {
-        /* Print from n to 98 in ascending order */
-        for (; n < 98; n++)
-            printf("%d, ", n);
-        printf("98\n");
-    }
-    else
-    {
-        /* Print from n to 98 in descending order */
-        for (; n > 98; n--)
-            printf("%d, ", n);
-        printf("98\n");
-    }
+	if (n <= 98)
+	{
+		/* Print from n to 98 in ascending order */
+		for (; n < 98; n++)
+			printf("%d, ", n);
+		printf("98\n");
+	}
+	else
+	{
+		/* Print from n to 98 in descending order */
+		for (; n > 98; n--)
+			printf("%d, ", n);
+		printf("98\n");
+	}
 }
