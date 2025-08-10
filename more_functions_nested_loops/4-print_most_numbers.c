@@ -8,7 +8,7 @@
  */
 void print_most_numbers(void)
 {
-	char nums[] = "1356789\n";
+	char nums[] = "01356789\n";
 	int i = 0;
 
 
