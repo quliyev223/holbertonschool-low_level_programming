@@ -4,7 +4,8 @@
  * print_diagonal - draws a diagonal line on the terminal using '\'
  * @n: number of times the character '\' should be printed (length of diagonal)
  *
- * Description: Prints n lines, each line has increasing spaces followed by '\',
+ * Description: Prints n lines, each line has increasing spaces 
+ * followed by '\',
  * If n <= 0, prints only a new line.
  *
  * Return: void
