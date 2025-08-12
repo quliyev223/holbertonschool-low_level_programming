@@ -5,8 +5,8 @@
  * @str: pointer to the string to print
  *
  * Description: This function prints each character of a string
- * 		to the standard output using _putchar, and theen
- * 		prints a newline character at the end.
+ * to the standard output using _putchar, and theen
+ * prints a newline character at the end.
  * Return: void
  */
 void _puts(char *str)
