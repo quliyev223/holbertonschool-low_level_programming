@@ -4,7 +4,7 @@
  * puts2 - Prints every other character of a string,
  * starting with the first character,
  * followed by a new line
- * @str - The input string
+ * @str: The string to be printed (every other character)
  *
  * Description: This function prints characters at even indexes
  * (0, 2, 4, ...) to the standard output.
