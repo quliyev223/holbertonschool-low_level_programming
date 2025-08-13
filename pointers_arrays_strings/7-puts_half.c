@@ -18,8 +18,7 @@ void puts_half(char *str)
 	while (str[len] != '\0')
 	{
 		len++;
-	}
-	
+	}	
 
 	/* Determine where to start printing */
 	if (len % 2 == 0)
