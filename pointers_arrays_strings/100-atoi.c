@@ -10,7 +10,7 @@
  * It takes into account all preceding '+' and '-' signs
  * Conversion stops at the first non_digit character after the number.
  */
-int atoi(char *s)
+int _atoi(char *s)
 {
 	int sign = 1; /* store the sign of the number */
 	int result = 0; /* store the resulting integer */
