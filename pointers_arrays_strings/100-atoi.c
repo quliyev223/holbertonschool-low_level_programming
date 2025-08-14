@@ -2,34 +2,41 @@
 
 /**
  * _atoi - converts a string to an integer
- * @s: the string to convert
+ * @s: pointer to the string to be converted
  *
- * Return: the integer value, or 0 if no numbers
+ * Description: This function parses a string and converts the first
+ * sequence of digits found into an integer. It considers all the
+ * '+' and '-' signs before the first digit, changing the sign
+ * accordingly. If no digits are found, it returns 0.
+ *
+ * Return: the integer value, or 0 if no digits are found
  */
 int _atoi(char *s)
 {
-    int sign = 1, result = 0, found_digit = 0;
+	int sign = 1;
+	int result = 0;
+	int found_digit = 0;
 
-    while (*s)
-    {
-        if (*s == '-')
-        {
-            if (!found_digit)
-                sign = -sign;
-        }
-        else if (*s == '+')
-        {
-            /* do nothing for '+' before number */
-        }
-        else if (*s >= '0' && *s <= '9')
-        {
-            found_digit = 1;
-            result = result * 10 + (*s - '0');
-        }
-        else if (found_digit)
-            break; /* stop at first non-digit after number */
-        s++;
-    }
+	while (*s)
+	{
+		if (*s == '-')
+			sign *= -1;
+		else if (*s == '+')
+		{
+			/* skip the plus sign */
+		}
+		else if (*s >= '0' && *s <= '9')
+		{
+			found_digit = 1;
+			result = (result * 10) + (*s - '0');
+		}
+		else if (found_digit)
+		{
+			/* stop when non-digit is found after number has started */
+			break;
+		}
+		s++;
+	}
 
-    return sign * result;
-}	
+	return (result * sign);
+}
