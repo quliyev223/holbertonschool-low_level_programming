@@ -9,7 +9,7 @@
 char *leet(char *str)
 {
 	int i, j;
-	char letters[] = "aAeAoOtTlL";
+	char letters[] = "aAeEoOtTlL";
 	char digits[] = "4433007711";
 
 	for (i = 0; str[i] != '\0'; i++)
