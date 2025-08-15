@@ -6,9 +6,9 @@
  * @src: source string to copy from
  * @n: maximum number of bytes to copy
  *
- * Description: THis function copies at most n characters from the 
+ * Description: THis function copies at most n characters from the
  * string pointed to by src to the buffer pointed to by dest.
- * If the length of src is less than n, the remainder of dest 
+ * If the length of src is less than n, the remainder of dest
  * will be padded with null bytes ('\0'). Unlike strcpy,
  *  This function works like the standard library function,
  * but it does not guarantee that dest will be null-terminated
