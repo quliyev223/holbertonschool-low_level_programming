@@ -10,7 +10,8 @@
  * string pointed to by src to the buffer pointed to by dest.
  * If the length of src is less than n, the remainder of dest 
  * will be padded with null bytes ('\0'). Unlike strcpy,
- * strncpy  does not guarantee that dest will be null-terminated
+ *  This function works like the standard library function,
+ * but it does not guarantee that dest will be null-terminated
  * if src is longer than or equal to n characters.
  *
  * Return: A pointer to the resulting string dest.
