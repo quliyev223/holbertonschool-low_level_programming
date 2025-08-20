@@ -2,8 +2,8 @@
 
 /**
  * main - prints the number of arguments passed to the program
- * @args: number of command line arguments
- * @argv: array of command line argument strings (unused)
+ * @args: number of arguments passed to the program
+ * @argv: array of arguments passed to the program (unused)
  *
  * Return: 0 (Success)
  */
