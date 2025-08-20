@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * check_prime - checks if a number is divisible by any number other than 1 and itself
+ * check_prime - checks if a number is divisible by 
+ * any number other than 1 and itself
  * @n: the number to check
  * @i: the current divisor being tested
  *
