@@ -3,19 +3,20 @@
 #include <stdlib.h>
 
 /**
- * create_array - Creates an array of chars, 
+ * create_array - Creates an array of chars,
  * and initializes it with a specific char.
  * @size: THe size of the array to create.
  * @c: The character to initialize the array with.
  *
- * Return: Pointer to the array, or NULL if size is 0 or if memory allocation fails.
+ * Return: Pointer to the array, or NULL if size is 0 
+ * or if memory allocation fails.
  */
 char *create_array(unsigned int size, char c)
 {
-	char *array;
+	char* array;
 	unsigned int i;
 
-	
+
 	if (size == 0)
 		return (NULL);
 
@@ -30,5 +31,5 @@ char *create_array(unsigned int size, char c)
 
 
 	return (array);
-}	
+}
 
