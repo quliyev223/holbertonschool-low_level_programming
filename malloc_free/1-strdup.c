@@ -37,14 +37,14 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	
+
 	len = str_len(str);
 
 
 	array = (char *)malloc((len + 1) * sizeof(char));
-	if(array == NULL)
+	if (array == NULL)
 		return (NULL);
-	
+
 
 	for (i = 0; i < len; i++)
 	{
