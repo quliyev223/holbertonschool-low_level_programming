@@ -1,6 +1,23 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
+
+/**
+ * str_len - returns the length of a string
+ * @str: input string
+ *
+ * Return: length og the string (excluding '\0')
+ */
+unsigned int str_len(char *str)
+{
+	unsigned int len = 0;
+
+	while (str[len] != '\0')
+		len++;
+
+
+	return (len);
+}
+
 
 /**
  * _strdup - returns a pointer to a newly allocated space in memory
@@ -20,7 +37,8 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	len = strlen(str);
+	
+	len = str_len(str);
 
 
 	array = (char *)malloc((len + 1) * sizeof(char));
