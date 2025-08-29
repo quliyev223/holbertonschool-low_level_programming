@@ -4,7 +4,7 @@
 
 /**
  * print_dog - Prints the contents of a struct dog
- * @D: Pointer to the struct dog to print
+ * @d: Pointer to the struct dog to print
  *
  * Description: This function prints the name, age, and owner
  * of the dog pointed to by @d. If the pointer @D: is NULL,
