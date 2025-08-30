@@ -19,6 +19,24 @@ int _strlen(char *s)
 	}
 	return (len);
 }
+
+
+/**
+ * _strcpy - copies a string from src to dest
+ * @dest: destination buffer
+ * @src: source string
+ */
+void _strcpy(char *dest, char *src)
+{
+	int i = 0;
+
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+			i++;
+	}
+	dest[i] = '\0'; /* add null terminator at the end */
+}
 /**
  * new_dog - Creates a new dog
  * @name: The name of the dog (string)
