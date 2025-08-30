@@ -1,9 +1,27 @@
 #include "dog.h"
 #include <stdio.h>
 
+
+/**
+ * _strlen - return the length of a string
+ * @s: pointer to the string
+ *
+ * Return: length of the string
+ */
+int _strlen(char *s)
+{
+	int len = 0;
+
+
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
+}
 /**
  * new_dog - Creates a new dog
- * @name: The anme of the dog (string)
+ * @name: The name of the dog (string)
  * @age: The age of the dog (float)
  * @owner: The owner of the dog (string)
  *
@@ -17,4 +35,5 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	
 
