@@ -22,7 +22,6 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-
 	/* Get pointer to the operation function based on operator */
 	op_func = get_op_func(argv[2]);
 
@@ -33,11 +32,9 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-
 	/* Convert input arguments to integer */
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-
 
 	/* Check for division or modulo by zero */
 	if ((argv[2][0] == '/' || argv[2][0] == '%') && b == 0)
@@ -46,14 +43,11 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-
 	/* Perform the operation and store the result */
 	result = op_func(a, b);
 
-
 	/* Print the result followed by a new line */
 	printf("%d\n", result);
-
 
 	return (0);
 }
