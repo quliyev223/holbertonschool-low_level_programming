@@ -14,15 +14,15 @@ int main(int argc, char *argv[])
 {
 	int a, b, result;
 	int (*op_func)(int, int);
-	
-	/* Checks for correct number of arguments */	
+
+	/* Checks for correct number of arguments */
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	
-		
+
+
 	/* Get pointer to the operation function based on operator */
 	op_func = get_op_func(argv[2]);
 
