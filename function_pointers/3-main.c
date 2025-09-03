@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <stdllib.h>
+#include <stdlib.h>
+#include "3-calc.h"
 
 
 /**
@@ -11,18 +12,48 @@
  */
 int main(int argc, char *argv[])
 {
-	int num1,num2;
+	int a, b, result;
+	int (*op_func)(int, int);
 	
-	
+	/* Checks for correct number of arguments */	
 	if (argc != 4)
 	{
-		printf("Error\n);
+		printf("Error\n");
 		exit(98);
+	}
+	
+		
+	/* Get pointer to the operation function based on operator */
+	op_func = get_op_func(argv[2]);
+
+	/* Validate operator: Must be one char and known operator */
+	if (!op_func || argv[1][2] != '\0')
+	{
+		printf("Error\n");
+		exit(99);
 	}
 
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
+	/* Convert input arguments to integer */
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
 
-	func = get_op_func(argv[2]);
+	/* Check for division or modulo by zero */
+	if ((argv[2][0] == '/' || argv[2][0] == '%') && b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+
+	/* Perform the operation and store the result */
+	result = op_func(a, b);
+
+
+	/* Print the result followed by a new line */
+	printf("%d\n", result);
+
+
+	return (0);
+}
