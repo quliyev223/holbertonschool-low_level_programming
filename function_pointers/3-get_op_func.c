@@ -21,7 +21,7 @@ int (*get_op_func(char *s))(int, int)
 	int i = 0;
 
 	/* loop through the operators array */
-	while (ops[i] != NULL)
+	while (ops[i].op != NULL)
 	{
 		/* If the input matches the current operator, return its function */
 		if (strcmp(s, ops[i].op) == 0)
