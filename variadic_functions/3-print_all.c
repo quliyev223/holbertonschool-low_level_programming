@@ -23,6 +23,13 @@ void print_all(const char * const format, ...)
 	char *str;
 	char *separator = "";
 
+	
+	if (format == NULL)
+	{
+		printf("\n")
+		return;
+	}
+
 
 	va_start(args, format);
 
