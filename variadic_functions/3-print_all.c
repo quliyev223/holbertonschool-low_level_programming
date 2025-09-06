@@ -5,11 +5,11 @@
 /**
  * print_all - prints anything based on a format string
  * @format: string of character representing argument types
- * 	c: char
- * 	i: int
- * 	f: float
- * 	s: string or char *
- 
+ * c: char
+ * i: int
+ * f: float
+ * s: string or char *
+ *
  * Description: Prints arguments in the order specified by format.
  * Ignores unknown characters. Prints (nil) for NULL strings.
  * Arguments are separated by ", ". Ends with a new line.
@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 	char *str;
 	char *separator = "";
 
-	
+
 	if (format == NULL)
 	{
 		printf("\n");
@@ -34,7 +34,7 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 
 
-	while(format[i] != '\0')
+	while (format[i] != '\0')
 	{
 		switch (format[i])
 		{
