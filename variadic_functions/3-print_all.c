@@ -23,16 +23,13 @@ void print_all(const char * const format, ...)
 	char *str;
 	char *separator = "";
 
-
 	if (format == NULL)
 	{
 		printf("\n");
 		return;
 	}
 
-
 	va_start(args, format);
-
 
 	while (format[i] != '\0')
 	{
@@ -60,7 +57,6 @@ void print_all(const char * const format, ...)
 		separator = ", ";
 		i++;
 	}
-
 	va_end(args);
 	printf("\n");
 }
