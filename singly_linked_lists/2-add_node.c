@@ -13,7 +13,6 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
-	unsigned int len;
 	char *dup_str;
 
 	if (str == NULL)
@@ -34,7 +33,6 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	len = 0;
 	new_node->len = strlen(str);
 
 	new_node->str = dup_str;
