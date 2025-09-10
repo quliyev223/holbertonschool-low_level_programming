@@ -7,8 +7,7 @@
  * @head: pointer to pointer to the first element of the list
  * @str: string to duplicate and put inside the new node
  *
- * Description:
- * This function creates a new list_t node, duplicates the given
+ * Description: Creates a new list_t node, duplicates the given
  * string into it, and attaches the node to the end of the list.
  * If the list is empty, the new  node becomes the first element.
  *
