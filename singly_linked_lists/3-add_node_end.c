@@ -6,11 +6,11 @@
  * add_node - adds a new node at he end of a list_t list
  * @head: pointer to pointer to the first element of the list
  * @str: string to duplicate and put inside the new node
- * 
+ *
  * Description: Creates a new list_t node with the duplicated string
  * and appends it to the end of the list. If the list is empty, the
  * new node becomes the first element.
- * 
+ *
  * Return:
  * The address of the new element, or NULL if memory allocation
  * or string duplication fails.
