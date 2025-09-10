@@ -11,8 +11,7 @@
  * and appends it to the end of the list. If the list is empty, the
  * new node becomes the first element.
  *
- * Return:
- * The address of the new element, or NULL if memory allocation
+ * Return: The address of the new element, or NULL if memory allocation
  * or string duplication fails.
  */
 list_t *add_node_end(list_t **head, const char *str)
