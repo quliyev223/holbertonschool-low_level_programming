@@ -19,7 +19,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		return (NULL);
 
 	new_node->n = n;
-	new_nodde->next = NULL;
+	new_node->next = NULL;
 	new_node->prev = NULL;
 
 	if (*head == NULL) /* If the list is empty */
