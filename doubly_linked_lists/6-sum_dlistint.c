@@ -2,7 +2,7 @@
 
 /**
  * sum_dlistint - sum all the data (n) of a doubly lnked list
- * @head; pointer to the head of the list
+ * @head: pointer to the head of the list
  *
  * Description: Iterates through the entire doubly linked list,
  * adds up all the integer values stored in each node,
