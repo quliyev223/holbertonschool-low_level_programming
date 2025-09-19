@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		close(fd_from);
 		close(fd_to);
-		exit(99);
+		exit(98);
 	}
 	if (close(fd_to) == -1)
 	{
