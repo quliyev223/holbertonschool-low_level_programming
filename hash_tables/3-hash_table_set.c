@@ -5,7 +5,7 @@
 /**
  * hash_table_set - Adds or updates an element in the hash table
  * @ht: THe hash table to add or update the key/value pair in
- * @key: The key to store. Must not be an empty string
+ * @key: The key to store. iMust not be an empty string
  * @value: The value associated with the key. Must be duplicated
  *
  * Return: 1 on success, 0 on failure
@@ -24,7 +24,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (value == NULL)
 		return (0);
 
-	hash = hash_djb2(key);
+	hash = hash_djb2((const unsigned char *)key);
 	index = hash % ht->size;
 
 	head = ht->array[index];
@@ -47,13 +47,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (new_node == NULL)
 		return (0);
 	new_node->key = strdup(key);
-	if (strdup == NULL)
+	if (new_node->key == NULL)
 	{
 		free(new_node);
 		return (0);
 	}
 	new_node->value = strdup(value);
-	if (strdup == NULL)
+	if (new_node->value == NULL)
 	{
 		free(new_node->key);
 		free(new_node);
