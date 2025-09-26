@@ -20,7 +20,7 @@ void hash_table_print(const hash_table_t *ht)
 		return;
 
 	printf("{");
-	
+
 	for (i = 0; i < ht->size - 1; i++)	/* Through each index in the array */
 	{
 		head = ht->array[i];		/* Traverse the linked list at this index */
